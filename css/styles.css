@@ -1,0 +1,119 @@
+.caption {
+    opacity: 1;
+}
+
+.poem h4 {
+  font-size: 35px;
+  font-family: Dancing_Script;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Dancing_Script;
+  font-weight: bold;
+  color: black;
+  transition: color 2s;
+}
+
+.portrait-round {
+    max-width: 500px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    transition: max-width 2s, max-height 2s, opacity 2s;
+}
+
+.portrait-round:hover{
+        max-width: 700px;
+        max-height: 600px;
+}
+
+.portrait-square {
+  width: 25%;
+  height: 25%;
+  transition: width 2s, height 2s, opacity 2s;
+}
+
+.portrait-square:hover{
+      width: 30%;
+      height: 30%;
+}
+
+#famous img {
+    width: 250px;
+    height: 175px;
+    border: 10px solid transparent;
+    border-image: url(../img/border.png) 30 stretch;
+    transition: 500ms ease-in-out;
+}
+
+#jobs img {
+  width: 250px;
+  height: 175px;
+  border: 10px solid rgba(88, 39, 153, 0.658);
+}
+
+#lute_como_uma_garota img {
+  max-width: 15%;
+  max-height: 15%;
+  width: auto;
+  height: auto;
+  margin: auto;
+  transition: max-width 2s, max-height 2s, opacity 2s;
+}
+
+#lute_como_uma_garota img:hover {
+  max-width: 25%;
+  max-height: 25%;
+}
+
+.item {
+    position: relative;
+    text-align: center;
+    color: black;
+    padding-bottom: 25px;
+  }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .image-caption {
+    font-family: 'Avantgarde', sans-serif;
+    font-size: 36px;
+    color: black;
+    text-shadow: 2px 0 0;
+    opacity:0;
+    transition:500ms ease-in-out;
+  }
+
+  #marie:hover .image-caption, #simone:hover .image-caption,
+  #frida:hover .image-caption, #malala:hover .image-caption,
+  #beyonce:hover .image-caption, #grace:hover .image-caption{
+    opacity:0.8;
+  }
+
+  #marie:hover img, #simone:hover img,
+  #frida:hover img, #malala:hover img,
+  #beyonce:hover img, #grace:hover img{
+    opacity:0.6;
+  }
+
+  .carousel-item li, h4 {
+    list-style-type: none;
+    display: inline;
+    padding-left: 90px;
+  }
+  
+  .special {
+    font-family: Dancing_Script;
+    opacity: 0.8;
+    font-size: 60px;
+  }
+
+  @font-face {
+    font-family: Dancing_Script;
+    src: url(./fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+  }
